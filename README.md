@@ -98,7 +98,6 @@ Output email:
 ]
 ```
 ## Project structure
-```
 
 ```python
 Assignment
