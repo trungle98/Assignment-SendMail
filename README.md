@@ -7,7 +7,7 @@ The python mail sender gives simplified console application for simulate sending
 
 ## Feature
 
-* Read input as a command line: contact file (csv) and template (json),path_to_error_file, path_to_success_file
+* Read input as a command line: contact file (csv) and template (json), path_to_error_file, path_to_success_file
 
 * Send email by template and contact input
 
@@ -18,17 +18,23 @@ The python mail sender gives simplified console application for simulate sending
 ## Sending simple mail
 ### Using docker
 `docker pull trunglqtcs19033/assignment-send-mail:assignment-send-mail`
+
 `docker run -it 7e4a13e5f55d`
 
 ### Run project:
 cd to project folder
+
 `cd /Assignment/api/`
+
 then run
+
 ` python3 MailAPI.py -c path_to_contacts_file.csv -t path_to_template_email.json -o path_to_output_success -e path_to_error_file `
 
 * Path_to_contacts_file and path_to_template_email are required, path_to_output_success, path_to_error_file if not given, default is empty, so output of success and error file is in root project folder.
 * Sample cmd
+
 `python3 MailAPI.py -t /Assignment/sample_resources/email_template.json -c /Assignment/sample_resources/contacts_file.csv -o /Assignment/output/ -e /Assignment/output/error.csv`
+
 * Sample input
 
 Contact file:
@@ -58,6 +64,7 @@ Error file:
 TITLE| FIRST_NAME| LAST_NAME| EMAIL
 ---|---|---|---|
 MR| Trung| Le| 
+
 Output email:
 ```json
 [
